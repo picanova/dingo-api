@@ -41,7 +41,7 @@
     "abandoned": "api-ecosystem-for-laravel/dingo-api",
     "autoload": {
         "psr-4": {
-            "Dingo\\Api\\": "src/"
+            "Picanova\\Api\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -49,7 +49,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Dingo\\Api\\Tests\\": "tests/"
+            "Picanova\\Api\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -58,10 +58,10 @@
         },
         "laravel": {
             "providers": [
-                "Dingo\\Api\\Provider\\LaravelServiceProvider"
+                "Picanova\\Api\\Provider\\LaravelServiceProvider"
             ],
             "aliases": {
-                "API": "Dingo\\Api\\Facade\\API"
+                "API": "Picanova\\Api\\Facade\\API"
             }
         }
     },
