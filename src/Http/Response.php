@@ -194,9 +194,11 @@ class Response extends IlluminateResponse
     }
 
     /**
-     * {@inheritdoc}
+     * Parameters: mixed $content
+     * Returns: Response
+     * Throws: InvalidArgumentException
      */
-    public function setContent($content)
+    public function setContent(mixed $content)
     {
         // Attempt to set the content string, if we encounter an unexpected value
         // then we most likely have an object that cannot be type cast. In that
