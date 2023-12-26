@@ -1,12 +1,12 @@
 <?php
 
-namespace Dingo\Api\Tests\Http\RateLimit;
+namespace Picanova\Api\Tests\Http\RateLimit;
 
-use Dingo\Api\Http\RateLimit\Handler;
-use Dingo\Api\Http\RateLimit\Throttle\Route;
-use Dingo\Api\Http\Request;
-use Dingo\Api\Tests\BaseTestCase;
-use Dingo\Api\Tests\Stubs\ThrottleStub;
+use Picanova\Api\Http\RateLimit\Handler;
+use Picanova\Api\Http\RateLimit\Throttle\Route;
+use Picanova\Api\Http\Request;
+use Picanova\Api\Tests\BaseTestCase;
+use Picanova\Api\Tests\Stubs\ThrottleStub;
 use Illuminate\Cache\CacheManager;
 use Illuminate\Container\Container;
 

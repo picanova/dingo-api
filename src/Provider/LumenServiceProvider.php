@@ -1,19 +1,19 @@
 <?php
 
-namespace Dingo\Api\Provider;
+namespace Picanova\Api\Provider;
 
 use ReflectionClass;
 use Laravel\Lumen\Application;
-use Dingo\Api\Http\FormRequest;
+use Picanova\Api\Http\FormRequest;
 use Laravel\Lumen\Http\Redirector;
-use Dingo\Api\Http\Middleware\Auth;
-use Dingo\Api\Http\Middleware\Request;
-use Dingo\Api\Http\Middleware\RateLimit;
+use Picanova\Api\Http\Middleware\Auth;
+use Picanova\Api\Http\Middleware\Request;
+use Picanova\Api\Http\Middleware\RateLimit;
 use FastRoute\Dispatcher\GroupCountBased;
-use Dingo\Api\Http\Middleware\PrepareController;
+use Picanova\Api\Http\Middleware\PrepareController;
 use FastRoute\RouteParser\Std as StdRouteParser;
 use Illuminate\Http\Request as IlluminateRequest;
-use Dingo\Api\Routing\Adapter\Lumen as LumenAdapter;
+use Picanova\Api\Routing\Adapter\Lumen as LumenAdapter;
 use Illuminate\Contracts\Validation\ValidatesWhenResolved;
 use FastRoute\DataGenerator\GroupCountBased as GcbDataGenerator;
 

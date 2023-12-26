@@ -1,13 +1,13 @@
 <?php
 
-namespace Dingo\Api\Tests\Auth;
+namespace Picanova\Api\Tests\Auth;
 
-use Dingo\Api\Auth\Auth;
-use Dingo\Api\Contract\Auth\Provider;
-use Dingo\Api\Http\Request;
-use Dingo\Api\Routing\Route;
-use Dingo\Api\Routing\Router;
-use Dingo\Api\Tests\BaseTestCase;
+use Picanova\Api\Auth\Auth;
+use Picanova\Api\Contract\Auth\Provider;
+use Picanova\Api\Http\Request;
+use Picanova\Api\Routing\Route;
+use Picanova\Api\Routing\Router;
+use Picanova\Api\Tests\BaseTestCase;
 use Illuminate\Container\Container;
 use Mockery as m;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;

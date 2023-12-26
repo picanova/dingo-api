@@ -1,10 +1,10 @@
 <?php
 
-namespace Dingo\Api\Tests\Transformer\Adapter;
+namespace Picanova\Api\Tests\Transformer\Adapter;
 
-use Dingo\Api\Http\Request;
-use Dingo\Api\Tests\BaseTestCase;
-use Dingo\Api\Transformer\Adapter\Fractal;
+use Picanova\Api\Http\Request;
+use Picanova\Api\Tests\BaseTestCase;
+use Picanova\Api\Transformer\Adapter\Fractal;
 use League\Fractal\Manager as FractalManager;
 
 class FractalTest extends BaseTestCase

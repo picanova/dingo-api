@@ -1,12 +1,12 @@
 <?php
 
-namespace Dingo\Api\Http;
+namespace Picanova\Api\Http;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Contracts\Validation\Validator;
-use Dingo\Api\Exception\ValidationHttpException;
+use Picanova\Api\Exception\ValidationHttpException;
 use Illuminate\Validation\ValidatesWhenResolvedTrait;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Illuminate\Contracts\Validation\ValidatesWhenResolved;

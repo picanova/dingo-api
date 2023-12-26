@@ -1,10 +1,10 @@
 <?php
 
-namespace Dingo\Api\Tests\Auth\Provider;
+namespace Picanova\Api\Tests\Auth\Provider;
 
-use Dingo\Api\Routing\Route;
-use Dingo\Api\Tests\BaseTestCase;
-use Dingo\Api\Tests\Stubs\AuthorizationProviderStub;
+use Picanova\Api\Routing\Route;
+use Picanova\Api\Tests\BaseTestCase;
+use Picanova\Api\Tests\Stubs\AuthorizationProviderStub;
 use Illuminate\Http\Request;
 use Mockery as m;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;

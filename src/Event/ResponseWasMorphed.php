@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Event;
+namespace Picanova\Api\Event;
 
 class ResponseWasMorphed extends ResponseIsMorphing
 {

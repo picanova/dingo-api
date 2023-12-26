@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Exception;
+namespace Picanova\Api\Exception;
 
 class UpdateResourceFailedException extends ResourceException
 {

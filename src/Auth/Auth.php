@@ -1,9 +1,9 @@
 <?php
 
-namespace Dingo\Api\Auth;
+namespace Picanova\Api\Auth;
 
 use Exception;
-use Dingo\Api\Routing\Router;
+use Picanova\Api\Routing\Router;
 use Illuminate\Container\Container;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
@@ -13,7 +13,7 @@ class Auth
     /**
      * Router instance.
      *
-     * @var \Dingo\Api\Routing\Router
+     * @var \Picanova\Api\Routing\Router
      */
     protected $router;
 
@@ -34,7 +34,7 @@ class Auth
     /**
      * The provider used for authentication.
      *
-     * @var \Dingo\Api\Contract\Auth\Provider
+     * @var \Picanova\Api\Contract\Auth\Provider
      */
     protected $providerUsed;
 
@@ -48,7 +48,7 @@ class Auth
     /**
      * Create a new auth instance.
      *
-     * @param \Dingo\Api\Routing\Router       $router
+     * @param \Picanova\Api\Routing\Router       $router
      * @param \Illuminate\Container\Container $container
      * @param array                           $providers
      *
@@ -171,7 +171,7 @@ class Auth
      *
      * @param \Illuminate\Auth\GenericUser|\Illuminate\Database\Eloquent\Model $user
      *
-     * @return \Dingo\Api\Auth\Auth
+     * @return \Picanova\Api\Auth\Auth
      */
     public function setUser($user)
     {
@@ -195,7 +195,7 @@ class Auth
     /**
      * Get the provider used for authentication.
      *
-     * @return \Dingo\Api\Contract\Auth\Provider
+     * @return \Picanova\Api\Contract\Auth\Provider
      */
     public function getProviderUsed()
     {

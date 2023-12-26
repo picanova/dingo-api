@@ -1,19 +1,19 @@
 <?php
 
-namespace Dingo\Api\Routing;
+namespace Picanova\Api\Routing;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Container\Container;
-use Dingo\Api\Contract\Routing\Adapter;
+use Picanova\Api\Contract\Routing\Adapter;
 
 class Route extends \Illuminate\Routing\Route
 {
     /**
      * Routing adapter instance.
      *
-     * @var \Dingo\Api\Contract\Routing\Adapter
+     * @var \Picanova\Api\Contract\Routing\Adapter
      */
     protected $adapter;
 
@@ -55,7 +55,7 @@ class Route extends \Illuminate\Routing\Route
     /**
      * The throttle used by the route, takes precedence over rate limits.
      *
-     * @return string|\Dingo\Api\Contract\Http\RateLimit\Throttle
+     * @return string|\Picanova\Api\Contract\Http\RateLimit\Throttle
      */
     protected $throttle;
 
@@ -84,7 +84,7 @@ class Route extends \Illuminate\Routing\Route
     /**
      * Create a new route instance.
      *
-     * @param \Dingo\Api\Contract\Routing\Adapter $adapter
+     * @param \Picanova\Api\Contract\Routing\Adapter $adapter
      * @param \Illuminate\Container\Container     $container
      * @param \Illuminate\Http\Request            $request
      * @param array|\Illuminate\Routing\Route     $route
@@ -317,7 +317,7 @@ class Route extends \Illuminate\Routing\Route
     /**
      * Get the route throttle.
      *
-     * @return string|\Dingo\Api\Http\RateLimit\Throttle\Throttle
+     * @return string|\Picanova\Api\Http\RateLimit\Throttle\Throttle
      */
     public function throttle()
     {
@@ -327,7 +327,7 @@ class Route extends \Illuminate\Routing\Route
     /**
      * Get the route throttle.
      *
-     * @return string|\Dingo\Api\Http\RateLimit\Throttle\Throttle
+     * @return string|\Picanova\Api\Http\RateLimit\Throttle\Throttle
      */
     public function getThrottle()
     {

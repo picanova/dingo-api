@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Contract\Http\RateLimit;
+namespace Picanova\Api\Contract\Http\RateLimit;
 
 use Illuminate\Container\Container;
 

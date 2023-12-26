@@ -1,8 +1,8 @@
 <?php
 
-namespace Dingo\Api\Tests\Stubs;
+namespace Picanova\Api\Tests\Stubs;
 
-use Dingo\Api\Routing\Helpers;
+use Picanova\Api\Routing\Helpers;
 use Illuminate\Routing\Controller;
 
 class RoutingControllerStub extends Controller

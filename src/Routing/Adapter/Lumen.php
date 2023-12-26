@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Routing\Adapter;
+namespace Picanova\Api\Routing\Adapter;
 
 use ArrayIterator;
 use ReflectionClass;
@@ -11,8 +11,8 @@ use FastRoute\DataGenerator;
 use Illuminate\Http\Request;
 use FastRoute\RouteCollector;
 use Laravel\Lumen\Application;
-use Dingo\Api\Contract\Routing\Adapter;
-use Dingo\Api\Exception\UnknownVersionException;
+use Picanova\Api\Contract\Routing\Adapter;
+use Picanova\Api\Exception\UnknownVersionException;
 
 class Lumen implements Adapter
 {
@@ -264,7 +264,7 @@ class Lumen implements Adapter
         $oldMiddlewares = $property->getValue($this->app);
         $newMiddlewares = [];
         foreach ($oldMiddlewares as $middle) {
-            if ((new ReflectionClass($middle))->hasMethod('terminate') && $middle != 'Dingo\Api\Http\Middleware\Request') {
+            if ((new ReflectionClass($middle))->hasMethod('terminate') && $middle != 'Picanova\Api\Http\Middleware\Request') {
                 $newMiddlewares = array_merge($newMiddlewares, [$middle]);
             }
         }

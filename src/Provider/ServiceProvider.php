@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Provider;
+namespace Picanova\Api\Provider;
 
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 

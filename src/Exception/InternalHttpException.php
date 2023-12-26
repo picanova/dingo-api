@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Exception;
+namespace Picanova\Api\Exception;
 
 use Exception;
 use Symfony\Component\HttpFoundation\Response;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Contract\Http;
+namespace Picanova\Api\Contract\Http;
 
 use Illuminate\Http\Request as IlluminateRequest;
 
@@ -11,7 +11,7 @@ interface Request
      *
      * @param \Illuminate\Http\Request $old
      *
-     * @return \Dingo\Api\Http\Request
+     * @return \Picanova\Api\Http\Request
      */
     public function createFromIlluminate(IlluminateRequest $old);
 }

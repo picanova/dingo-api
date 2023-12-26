@@ -1,9 +1,9 @@
 <?php
 
-namespace Dingo\Api\Http\Parser;
+namespace Picanova\Api\Http\Parser;
 
 use Illuminate\Http\Request;
-use Dingo\Api\Contract\Http\Parser;
+use Picanova\Api\Contract\Http\Parser;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
 class Accept implements Parser

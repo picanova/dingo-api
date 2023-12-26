@@ -1,12 +1,12 @@
 <?php
 
-namespace Dingo\Api\Tests\Http\Response;
+namespace Picanova\Api\Tests\Http\Response;
 
 use Closure;
-use Dingo\Api\Http\Response\Factory;
-use Dingo\Api\Tests\BaseTestCase;
-use Dingo\Api\Tests\Stubs\UserStub;
-use Dingo\Api\Transformer\Factory as TransformerFactory;
+use Picanova\Api\Http\Response\Factory;
+use Picanova\Api\Tests\BaseTestCase;
+use Picanova\Api\Tests\Stubs\UserStub;
+use Picanova\Api\Transformer\Factory as TransformerFactory;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Collection;
 use League\Fractal\Manager;

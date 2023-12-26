@@ -1,12 +1,12 @@
 <?php
 
-namespace Dingo\Api\Tests;
+namespace Picanova\Api\Tests;
 
-use Dingo\Api\Tests\Stubs\ApplicationStub;
-use Dingo\Api\Tests\Stubs\Application8Stub;
-use Dingo\Api\Tests\Stubs\Application7Stub;
-use Dingo\Api\Tests\Stubs\Application6Stub;
-use Dingo\Api\Tests\Stubs\Application58Stub;
+use Picanova\Api\Tests\Stubs\ApplicationStub;
+use Picanova\Api\Tests\Stubs\Application8Stub;
+use Picanova\Api\Tests\Stubs\Application7Stub;
+use Picanova\Api\Tests\Stubs\Application6Stub;
+use Picanova\Api\Tests\Stubs\Application58Stub;
 
 trait ChecksLaravelVersionTrait
 {

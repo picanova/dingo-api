@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Http\Response\Format;
+namespace Picanova\Api\Http\Response\Format;
 
 trait JsonOptionalFormatting
 {

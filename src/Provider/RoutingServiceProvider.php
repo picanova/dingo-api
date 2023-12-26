@@ -1,12 +1,12 @@
 <?php
 
-namespace Dingo\Api\Provider;
+namespace Picanova\Api\Provider;
 
-use Dingo\Api\Routing\Router;
-use Dingo\Api\Routing\UrlGenerator;
-use Dingo\Api\Contract\Routing\Adapter;
-use Dingo\Api\Routing\ResourceRegistrar;
-use Dingo\Api\Contract\Debug\ExceptionHandler;
+use Picanova\Api\Routing\Router;
+use Picanova\Api\Routing\UrlGenerator;
+use Picanova\Api\Contract\Routing\Adapter;
+use Picanova\Api\Routing\ResourceRegistrar;
+use Picanova\Api\Contract\Debug\ExceptionHandler;
 
 class RoutingServiceProvider extends ServiceProvider
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Dingo\Api\Auth\Provider;
+namespace Picanova\Api\Auth\Provider;
 
 use Exception;
 use Tymon\JWTAuth\JWTAuth;
-use Dingo\Api\Routing\Route;
+use Picanova\Api\Routing\Route;
 use Illuminate\Http\Request;
 use Tymon\JWTAuth\Exceptions\JWTException;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
@@ -34,7 +34,7 @@ class JWT extends Authorization
      * Authenticate request with a JWT.
      *
      * @param \Illuminate\Http\Request $request
-     * @param \Dingo\Api\Routing\Route $route
+     * @param \Picanova\Api\Routing\Route $route
      *
      * @return mixed
      */

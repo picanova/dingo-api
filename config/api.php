@@ -198,7 +198,7 @@ return [
     |
     */
 
-    'transformer' => env('API_TRANSFORMER', Dingo\Api\Transformer\Adapter\Fractal::class),
+    'transformer' => env('API_TRANSFORMER', Picanova\Api\Transformer\Adapter\Fractal::class),
 
     /*
     |--------------------------------------------------------------------------
@@ -215,7 +215,7 @@ return [
 
     'formats' => [
 
-        'json' => Dingo\Api\Http\Response\Format\Json::class,
+        'json' => Picanova\Api\Http\Response\Format\Json::class,
 
     ],
 

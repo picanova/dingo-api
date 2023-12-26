@@ -1,10 +1,10 @@
 <?php
 
-namespace Dingo\Api\Http\Validation;
+namespace Picanova\Api\Http\Validation;
 
 use Illuminate\Http\Request;
-use Dingo\Api\Contract\Http\Validator;
-use Dingo\Api\Http\Parser\Accept as AcceptParser;
+use Picanova\Api\Contract\Http\Validator;
+use Picanova\Api\Http\Parser\Accept as AcceptParser;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
 class Accept implements Validator
@@ -12,7 +12,7 @@ class Accept implements Validator
     /**
      * Accept parser instance.
      *
-     * @var \Dingo\Api\Http\Parser\Accept
+     * @var \Picanova\Api\Http\Parser\Accept
      */
     protected $accept;
 
@@ -26,7 +26,7 @@ class Accept implements Validator
     /**
      * Create a new accept validator instance.
      *
-     * @param \Dingo\Api\Http\Parser\Accept $accept
+     * @param \Picanova\Api\Http\Parser\Accept $accept
      * @param bool                          $strict
      *
      * @return void

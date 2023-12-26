@@ -1,14 +1,14 @@
 <?php
 
-namespace Dingo\Api\Tests\Routing\Adapter;
+namespace Picanova\Api\Tests\Routing\Adapter;
 
-use Dingo\Api\Exception\Handler;
-use Dingo\Api\Http;
-use Dingo\Api\Routing\Adapter\Laravel;
-use Dingo\Api\Routing\Adapter\Lumen;
-use Dingo\Api\Routing\Router;
-use Dingo\Api\Tests\BaseTestCase;
-use Dingo\Api\Tests\Stubs\MiddlewareStub;
+use Picanova\Api\Exception\Handler;
+use Picanova\Api\Http;
+use Picanova\Api\Routing\Adapter\Laravel;
+use Picanova\Api\Routing\Adapter\Lumen;
+use Picanova\Api\Routing\Router;
+use Picanova\Api\Tests\BaseTestCase;
+use Picanova\Api\Tests\Stubs\MiddlewareStub;
 use Illuminate\Contracts\Container\Container;
 use Laravel\Lumen\Application;
 use Mockery as m;
@@ -209,7 +209,7 @@ abstract class BaseAdapterTest extends BaseTestCase
 
     public function testRoutingResources()
     {
-        $this->router->version('v1', ['namespace' => '\Dingo\Api\Tests\Stubs'], function () {
+        $this->router->version('v1', ['namespace' => '\Picanova\Api\Tests\Stubs'], function () {
             $this->router->resources([
                 'bar' => ['RoutingControllerStub', ['only' => ['index']]],
             ]);
@@ -222,7 +222,7 @@ abstract class BaseAdapterTest extends BaseTestCase
 
     public function testIterableRoutes()
     {
-        $this->router->version('v1', ['namespace' => '\Dingo\Api\Tests\Stubs'], function () {
+        $this->router->version('v1', ['namespace' => '\Picanova\Api\Tests\Stubs'], function () {
             $this->router->post('/', ['uses' => 'RoutingControllerStub@index']);
             $this->router->post('/find', ['uses' => 'RoutingControllerOtherStub@show']);
         });

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Transformer;
+namespace Picanova\Api\Transformer;
 
 use Closure;
 use RuntimeException;

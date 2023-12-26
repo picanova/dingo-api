@@ -1,9 +1,9 @@
 <?php
 
-namespace Dingo\Api\Tests\Http\Validation;
+namespace Picanova\Api\Tests\Http\Validation;
 
-use Dingo\Api\Http\Validation\Domain;
-use Dingo\Api\Tests\BaseTestCase;
+use Picanova\Api\Http\Validation\Domain;
+use Picanova\Api\Tests\BaseTestCase;
 use Illuminate\Http\Request;
 
 class DomainTest extends BaseTestCase

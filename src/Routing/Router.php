@@ -1,13 +1,13 @@
 <?php
 
-namespace Dingo\Api\Routing;
+namespace Picanova\Api\Routing;
 
 use Closure;
-use Dingo\Api\Contract\Debug\ExceptionHandler;
-use Dingo\Api\Contract\Routing\Adapter;
-use Dingo\Api\Http\InternalRequest;
-use Dingo\Api\Http\Request;
-use Dingo\Api\Http\Response;
+use Picanova\Api\Contract\Debug\ExceptionHandler;
+use Picanova\Api\Contract\Routing\Adapter;
+use Picanova\Api\Http\InternalRequest;
+use Picanova\Api\Http\Request;
+use Picanova\Api\Http\Response;
 use Exception;
 use Illuminate\Container\Container;
 use Illuminate\Http\JsonResponse;
@@ -22,21 +22,21 @@ class Router
     /**
      * Routing adapter instance.
      *
-     * @var \Dingo\Api\Contract\Routing\Adapter
+     * @var \Picanova\Api\Contract\Routing\Adapter
      */
     protected $adapter;
 
     /**
      * Accept parser instance.
      *
-     * @var \Dingo\Api\Http\Parser\Accept
+     * @var \Picanova\Api\Http\Parser\Accept
      */
     protected $accept;
 
     /**
      * Exception handler instance.
      *
-     * @var \Dingo\Api\Contract\Debug\ExceptionHandler
+     * @var \Picanova\Api\Contract\Debug\ExceptionHandler
      */
     protected $exception;
 
@@ -64,7 +64,7 @@ class Router
     /**
      * The current route being dispatched.
      *
-     * @var \Dingo\Api\Routing\Route
+     * @var \Picanova\Api\Routing\Route
      */
     protected $currentRoute;
 
@@ -92,8 +92,8 @@ class Router
     /**
      * Create a new router instance.
      *
-     * @param \Dingo\Api\Contract\Routing\Adapter        $adapter
-     * @param \Dingo\Api\Contract\Debug\ExceptionHandler $exception
+     * @param \Picanova\Api\Contract\Routing\Adapter        $adapter
+     * @param \Picanova\Api\Contract\Debug\ExceptionHandler $exception
      * @param \Illuminate\Container\Container            $container
      * @param string                                     $domain
      * @param string                                     $prefix
@@ -500,11 +500,11 @@ class Router
     /**
      * Dispatch a request via the adapter.
      *
-     * @param \Dingo\Api\Http\Request $request
+     * @param \Picanova\Api\Http\Request $request
      *
      * @throws \Exception
      *
-     * @return \Dingo\Api\Http\Response
+     * @return \Picanova\Api\Http\Response
      */
     public function dispatch(Request $request)
     {
@@ -533,10 +533,10 @@ class Router
      * Prepare a response by transforming and formatting it correctly.
      *
      * @param mixed                   $response
-     * @param \Dingo\Api\Http\Request $request
+     * @param \Picanova\Api\Http\Request $request
      * @param string                  $format
      *
-     * @return \Dingo\Api\Http\Response
+     * @return \Picanova\Api\Http\Response
      */
     protected function prepareResponse($response, Request $request, $format)
     {
@@ -608,7 +608,7 @@ class Router
     /**
      * Get the current request instance.
      *
-     * @return \Dingo\Api\Http\Request
+     * @return \Picanova\Api\Http\Request
      */
     public function getCurrentRequest()
     {
@@ -618,7 +618,7 @@ class Router
     /**
      * Get the current route instance.
      *
-     * @return \Dingo\Api\Routing\Route
+     * @return \Picanova\Api\Routing\Route
      */
     public function getCurrentRoute()
     {
@@ -646,7 +646,7 @@ class Router
      *
      * @param array|\Illuminate\Routing\Route $route
      *
-     * @return \Dingo\Api\Routing\Route
+     * @return \Picanova\Api\Routing\Route
      */
     public function createRoute($route)
     {
@@ -656,7 +656,7 @@ class Router
     /**
      * Set the current route instance.
      *
-     * @param \Dingo\Api\Routing\Route $route
+     * @param \Picanova\Api\Routing\Route $route
      *
      * @return void
      */

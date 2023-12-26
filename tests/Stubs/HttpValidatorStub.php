@@ -1,8 +1,8 @@
 <?php
 
-namespace Dingo\Api\Tests\Stubs;
+namespace Picanova\Api\Tests\Stubs;
 
-use Dingo\Api\Contract\Http\Validator;
+use Picanova\Api\Contract\Http\Validator;
 use Illuminate\Http\Request;
 
 class HttpValidatorStub implements Validator

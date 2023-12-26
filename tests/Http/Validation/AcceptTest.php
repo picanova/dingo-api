@@ -1,10 +1,10 @@
 <?php
 
-namespace Dingo\Api\Tests\Http\Validation;
+namespace Picanova\Api\Tests\Http\Validation;
 
-use Dingo\Api\Http\Parser\Accept as AcceptParser;
-use Dingo\Api\Http\Validation\Accept as AcceptValidator;
-use Dingo\Api\Tests\BaseTestCase;
+use Picanova\Api\Http\Parser\Accept as AcceptParser;
+use Picanova\Api\Http\Validation\Accept as AcceptValidator;
+use Picanova\Api\Tests\BaseTestCase;
 use Illuminate\Http\Request;
 
 class AcceptTest extends BaseTestCase

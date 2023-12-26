@@ -1,8 +1,8 @@
 <?php
 
-namespace Dingo\Api\Contract\Auth;
+namespace Picanova\Api\Contract\Auth;
 
-use Dingo\Api\Routing\Route;
+use Picanova\Api\Routing\Route;
 use Illuminate\Http\Request;
 
 interface Provider
@@ -11,7 +11,7 @@ interface Provider
      * Authenticate the request and return the authenticated user instance.
      *
      * @param \Illuminate\Http\Request $request
-     * @param \Dingo\Api\Routing\Route $route
+     * @param \Picanova\Api\Routing\Route $route
      *
      * @return mixed
      */

@@ -1,8 +1,8 @@
 <?php
 
-namespace Dingo\Api\Tests;
+namespace Picanova\Api\Tests;
 
-use Dingo\Api\Http\Response;
+use Picanova\Api\Http\Response;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 

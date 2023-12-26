@@ -1,14 +1,14 @@
 <?php
 
-namespace Dingo\Api\Tests\Routing;
+namespace Picanova\Api\Tests\Routing;
 
-use Dingo\Api\Http\Request;
-use Dingo\Api\Routing\Route;
-use Dingo\Api\Tests\BaseTestCase;
-use Dingo\Api\Tests\Stubs\BasicThrottleStub;
-use Dingo\Api\Tests\Stubs\RoutingAdapterStub;
-use Dingo\Api\Tests\Stubs\RoutingControllerStub;
-use Dingo\Api\Tests\Stubs\ThrottleStub;
+use Picanova\Api\Http\Request;
+use Picanova\Api\Routing\Route;
+use Picanova\Api\Tests\BaseTestCase;
+use Picanova\Api\Tests\Stubs\BasicThrottleStub;
+use Picanova\Api\Tests\Stubs\RoutingAdapterStub;
+use Picanova\Api\Tests\Stubs\RoutingControllerStub;
+use Picanova\Api\Tests\Stubs\ThrottleStub;
 use Illuminate\Container\Container;
 use Illuminate\Routing\Route as IlluminateRoute;
 

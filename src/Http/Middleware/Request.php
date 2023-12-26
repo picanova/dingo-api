@@ -1,18 +1,18 @@
 <?php
 
-namespace Dingo\Api\Http\Middleware;
+namespace Picanova\Api\Http\Middleware;
 
 use Closure;
 use Exception;
-use Dingo\Api\Routing\Router;
+use Picanova\Api\Routing\Router;
 use Laravel\Lumen\Application;
 use Illuminate\Pipeline\Pipeline;
-use Dingo\Api\Http\RequestValidator;
-use Dingo\Api\Event\RequestWasMatched;
-use Dingo\Api\Http\Request as HttpRequest;
+use Picanova\Api\Http\RequestValidator;
+use Picanova\Api\Event\RequestWasMatched;
+use Picanova\Api\Http\Request as HttpRequest;
 use Illuminate\Contracts\Container\Container;
-use Dingo\Api\Contract\Debug\ExceptionHandler;
-use Dingo\Api\Contract\Http\Request as RequestContract;
+use Picanova\Api\Contract\Debug\ExceptionHandler;
+use Picanova\Api\Contract\Http\Request as RequestContract;
 use Illuminate\Contracts\Events\Dispatcher as EventDispatcher;
 use Illuminate\Contracts\Debug\ExceptionHandler as LaravelExceptionHandler;
 
@@ -28,21 +28,21 @@ class Request
     /**
      * Exception handler instance.
      *
-     * @var \Dingo\Api\Contract\Debug\ExceptionHandler
+     * @var \Picanova\Api\Contract\Debug\ExceptionHandler
      */
     protected $exception;
 
     /**
      * Router instance.
      *
-     * @var \Dingo\Api\Routing\Router
+     * @var \Picanova\Api\Routing\Router
      */
     protected $router;
 
     /**
      * HTTP validator instance.
      *
-     * @var \Dingo\Api\Http\Validator
+     * @var \Picanova\Api\Http\Validator
      */
     protected $validator;
 
@@ -64,9 +64,9 @@ class Request
      * Create a new request middleware instance.
      *
      * @param \Illuminate\Contracts\Foundation\Application $app
-     * @param \Dingo\Api\Contract\Debug\ExceptionHandler   $exception
-     * @param \Dingo\Api\Routing\Router                    $router
-     * @param \Dingo\Api\Http\RequestValidator             $validator
+     * @param \Picanova\Api\Contract\Debug\ExceptionHandler   $exception
+     * @param \Picanova\Api\Routing\Router                    $router
+     * @param \Picanova\Api\Http\RequestValidator             $validator
      * @param \Illuminate\Contracts\Events\Dispatcher      $events
      *
      * @return void
@@ -114,9 +114,9 @@ class Request
     /**
      * Send the request through the Dingo router.
      *
-     * @param \Dingo\Api\Http\Request $request
+     * @param \Picanova\Api\Http\Request $request
      *
-     * @return \Dingo\Api\Http\Response
+     * @return \Picanova\Api\Http\Response
      */
     protected function sendRequestThroughRouter(HttpRequest $request)
     {
@@ -190,7 +190,7 @@ class Request
     /**
      * Gather the middlewares for the route.
      *
-     * @param \Dingo\Api\Http\Request $request
+     * @param \Picanova\Api\Http\Request $request
      *
      * @return array
      */

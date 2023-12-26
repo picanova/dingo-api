@@ -1,13 +1,13 @@
 <?php
 
-namespace Dingo\Api\Tests\Http;
+namespace Picanova\Api\Tests\Http;
 
-use Dingo\Api\Event\ResponseIsMorphing;
-use Dingo\Api\Event\ResponseWasMorphed;
-use Dingo\Api\Http\Response;
-use Dingo\Api\Http\Response\Format\Json;
-use Dingo\Api\Tests\BaseTestCase;
-use Dingo\Api\Transformer\Binding;
+use Picanova\Api\Event\ResponseIsMorphing;
+use Picanova\Api\Event\ResponseWasMorphed;
+use Picanova\Api\Http\Response;
+use Picanova\Api\Http\Response\Format\Json;
+use Picanova\Api\Tests\BaseTestCase;
+use Picanova\Api\Transformer\Binding;
 use Illuminate\Container\Container;
 use Illuminate\Events\Dispatcher as EventDispatcher;
 use Mockery as m;

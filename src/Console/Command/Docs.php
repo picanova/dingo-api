@@ -1,13 +1,13 @@
 <?php
 
-namespace Dingo\Api\Console\Command;
+namespace Picanova\Api\Console\Command;
 
 use ReflectionClass;
-use Dingo\Blueprint\Writer;
+use Picanova\Blueprint\Writer;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Dingo\Api\Routing\Router;
-use Dingo\Blueprint\Blueprint;
+use Picanova\Api\Routing\Router;
+use Picanova\Blueprint\Blueprint;
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
 
@@ -16,28 +16,28 @@ class Docs extends Command
     /**
      * Router instance.
      *
-     * @var \Dingo\Api\Routing\Router
+     * @var \Picanova\Api\Routing\Router
      */
     protected $router;
 
     /**
      * The blueprint instance.
      *
-     * @var \Dingo\Blueprint\Blueprint
+     * @var \Picanova\Blueprint\Blueprint
      */
     protected $blueprint;
 
     /**
      * Blueprint instance.
      *
-     * @var \Dingo\Blueprint\Blueprint
+     * @var \Picanova\Blueprint\Blueprint
      */
     protected $docs;
 
     /**
      * Writer instance.
      *
-     * @var \Dingo\Blueprint\Writer
+     * @var \Picanova\Blueprint\Writer
      */
     protected $writer;
 
@@ -76,9 +76,9 @@ class Docs extends Command
     /**
      * Create a new docs command instance.
      *
-     * @param \Dingo\Api\Routing\Router  $router
-     * @param \Dingo\Blueprint\Blueprint $blueprint
-     * @param \Dingo\Blueprint\Writer    $writer
+     * @param \Picanova\Api\Routing\Router  $router
+     * @param \Picanova\Blueprint\Blueprint $blueprint
+     * @param \Picanova\Blueprint\Writer    $writer
      * @param string                     $name
      * @param string                     $version
      *

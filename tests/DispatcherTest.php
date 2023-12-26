@@ -1,21 +1,21 @@
 <?php
 
-namespace Dingo\Api\Tests;
+namespace Picanova\Api\Tests;
 
-use Dingo\Api\Auth\Auth;
-use Dingo\Api\Dispatcher;
-use Dingo\Api\Exception\Handler;
-use Dingo\Api\Exception\InternalHttpException;
-use Dingo\Api\Exception\ValidationHttpException;
-use Dingo\Api\Http;
-use Dingo\Api\Http\Response;
-use Dingo\Api\Routing\Router;
-use Dingo\Api\Tests\Stubs\MiddlewareStub;
-use Dingo\Api\Tests\Stubs\RoutingAdapterStub;
-use Dingo\Api\Tests\Stubs\TransformerStub;
-use Dingo\Api\Tests\Stubs\UserStub;
-use Dingo\Api\Tests\Stubs\UserTransformerStub;
-use Dingo\Api\Transformer\Factory as TransformerFactory;
+use Picanova\Api\Auth\Auth;
+use Picanova\Api\Dispatcher;
+use Picanova\Api\Exception\Handler;
+use Picanova\Api\Exception\InternalHttpException;
+use Picanova\Api\Exception\ValidationHttpException;
+use Picanova\Api\Http;
+use Picanova\Api\Http\Response;
+use Picanova\Api\Routing\Router;
+use Picanova\Api\Tests\Stubs\MiddlewareStub;
+use Picanova\Api\Tests\Stubs\RoutingAdapterStub;
+use Picanova\Api\Tests\Stubs\TransformerStub;
+use Picanova\Api\Tests\Stubs\UserStub;
+use Picanova\Api\Tests\Stubs\UserTransformerStub;
+use Picanova\Api\Transformer\Factory as TransformerFactory;
 use Illuminate\Container\Container;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Http\JsonResponse;

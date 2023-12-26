@@ -1,17 +1,17 @@
 <?php
 
-namespace Dingo\Api\Http;
+namespace Picanova\Api\Http;
 
-use Dingo\Api\Http\Parser\Accept;
+use Picanova\Api\Http\Parser\Accept;
 use Illuminate\Http\Request as IlluminateRequest;
-use Dingo\Api\Contract\Http\Request as RequestInterface;
+use Picanova\Api\Contract\Http\Request as RequestInterface;
 
 class Request extends IlluminateRequest implements RequestInterface
 {
     /**
      * Accept parser instance.
      *
-     * @var \Dingo\Api\Http\Parser\Accept
+     * @var \Picanova\Api\Http\Parser\Accept
      */
     protected static $acceptParser;
 
@@ -27,7 +27,7 @@ class Request extends IlluminateRequest implements RequestInterface
      *
      * @param \Illuminate\Http\Request $old
      *
-     * @return \Dingo\Api\Http\Request
+     * @return \Picanova\Api\Http\Request
      */
     public function createFromIlluminate(IlluminateRequest $old)
     {
@@ -99,7 +99,7 @@ class Request extends IlluminateRequest implements RequestInterface
     /**
      * Set the accept parser instance.
      *
-     * @param \Dingo\Api\Http\Parser\Accept $acceptParser
+     * @param \Picanova\Api\Http\Parser\Accept $acceptParser
      *
      * @return void
      */
@@ -111,7 +111,7 @@ class Request extends IlluminateRequest implements RequestInterface
     /**
      * Get the accept parser instance.
      *
-     * @return \Dingo\Api\Http\Parser\Accept
+     * @return \Picanova\Api\Http\Parser\Accept
      */
     public static function getAcceptParser()
     {

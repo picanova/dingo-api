@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Tests\Stubs;
+namespace Picanova\Api\Tests\Stubs;
 
 use Closure;
 

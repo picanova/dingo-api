@@ -1,8 +1,8 @@
 <?php
 
-namespace Dingo\Api\Facade;
+namespace Picanova\Api\Facade;
 
-use Dingo\Api\Http\InternalRequest;
+use Picanova\Api\Http\InternalRequest;
 use Illuminate\Support\Facades\Facade;
 
 class API extends Facade
@@ -35,7 +35,7 @@ class API extends Facade
      * @param string          $class
      * @param string|\Closure $transformer
      *
-     * @return \Dingo\Api\Transformer\Binding
+     * @return \Picanova\Api\Transformer\Binding
      */
     public static function transform($class, $transformer)
     {
@@ -45,7 +45,7 @@ class API extends Facade
     /**
      * Get the authenticator.
      *
-     * @return \Dingo\Api\Auth\Auth
+     * @return \Picanova\Api\Auth\Auth
      */
     public static function auth()
     {
@@ -75,7 +75,7 @@ class API extends Facade
     /**
      * Get the response factory to begin building a response.
      *
-     * @return \Dingo\Api\Http\Response\Factory
+     * @return \Picanova\Api\Http\Response\Factory
      */
     public static function response()
     {
@@ -85,7 +85,7 @@ class API extends Facade
     /**
      * Get the API router instance.
      *
-     * @return \Dingo\Api\Routing\Router
+     * @return \Picanova\Api\Routing\Router
      */
     public static function router()
     {

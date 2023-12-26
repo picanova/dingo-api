@@ -1,8 +1,8 @@
 <?php
 
-namespace Dingo\Api\Contract\Http\RateLimit;
+namespace Picanova\Api\Contract\Http\RateLimit;
 
-use Dingo\Api\Http\Request;
+use Picanova\Api\Http\Request;
 use Illuminate\Container\Container;
 
 interface HasRateLimiter
@@ -11,7 +11,7 @@ interface HasRateLimiter
      * Get rate limiter callable.
      *
      * @param \Illuminate\Container\Container $app
-     * @param \Dingo\Api\Http\Request         $request
+     * @param \Picanova\Api\Http\Request         $request
      *
      * @return string
      */

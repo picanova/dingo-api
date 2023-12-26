@@ -1,15 +1,15 @@
 <?php
 
-namespace Dingo\Api\Event;
+namespace Picanova\Api\Event;
 
-use Dingo\Api\Http\Response;
+use Picanova\Api\Http\Response;
 
 class ResponseIsMorphing
 {
     /**
      * Response instance.
      *
-     * @var \Dingo\Api\Http\Response
+     * @var \Picanova\Api\Http\Response
      */
     public $response;
 
@@ -24,7 +24,7 @@ class ResponseIsMorphing
      * Create a new response is morphing event. Content is passed by reference
      * so that multiple listeners can modify content.
      *
-     * @param \Dingo\Api\Http\Response $response
+     * @param \Picanova\Api\Http\Response $response
      * @param string                   $content
      *
      * @return void

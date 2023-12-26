@@ -1,10 +1,10 @@
 <?php
 
-namespace Dingo\Api\Tests\Stubs;
+namespace Picanova\Api\Tests\Stubs;
 
 use Closure;
-use Dingo\Api\Contract\Routing\Adapter;
-use Dingo\Api\Http\Response;
+use Picanova\Api\Contract\Routing\Adapter;
+use Picanova\Api\Http\Response;
 use Illuminate\Container\Container;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Contract\Debug;
+namespace Picanova\Api\Contract\Debug;
 
 interface ExceptionHandler
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Dingo\Api\Exception;
+namespace Picanova\Api\Exception;
 
-use Dingo\Api\Http\Request;
+use Picanova\Api\Http\Request;
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Str;
 use Illuminate\Http\Response;
-use Dingo\Api\Contract\Debug\ExceptionHandler;
-use Dingo\Api\Contract\Debug\MessageBagErrors;
+use Picanova\Api\Contract\Debug\ExceptionHandler;
+use Picanova\Api\Contract\Debug\MessageBagErrors;
 use Illuminate\Contracts\Debug\ExceptionHandler as IlluminateExceptionHandler;
 use Illuminate\Validation\ValidationException;
 use ReflectionFunction;

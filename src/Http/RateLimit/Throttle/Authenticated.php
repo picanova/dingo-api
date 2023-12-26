@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Http\RateLimit\Throttle;
+namespace Picanova\Api\Http\RateLimit\Throttle;
 
 use Illuminate\Container\Container;
 

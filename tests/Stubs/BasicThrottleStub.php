@@ -1,8 +1,8 @@
 <?php
 
-namespace Dingo\Api\Tests\Stubs;
+namespace Picanova\Api\Tests\Stubs;
 
-use Dingo\Api\Contract\Http\RateLimit\Throttle;
+use Picanova\Api\Contract\Http\RateLimit\Throttle;
 use Illuminate\Container\Container;
 
 class BasicThrottleStub implements Throttle

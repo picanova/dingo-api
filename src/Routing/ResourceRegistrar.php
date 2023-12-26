@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Routing;
+namespace Picanova\Api\Routing;
 
 use Illuminate\Support\Str;
 use Illuminate\Routing\ResourceRegistrar as IlluminateResourceRegistrar;
@@ -17,7 +17,7 @@ class ResourceRegistrar extends IlluminateResourceRegistrar
     /**
      * Create a new resource registrar instance.
      *
-     * @param \Dingo\Api\Routing\Router $router
+     * @param \Picanova\Api\Routing\Router $router
      *
      * @return void
      */

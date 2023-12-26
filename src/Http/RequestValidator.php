@@ -1,12 +1,12 @@
 <?php
 
-namespace Dingo\Api\Http;
+namespace Picanova\Api\Http;
 
 use Illuminate\Container\Container;
-use Dingo\Api\Http\Validation\Accept;
-use Dingo\Api\Http\Validation\Domain;
-use Dingo\Api\Http\Validation\Prefix;
-use Dingo\Api\Contract\Http\Validator;
+use Picanova\Api\Http\Validation\Accept;
+use Picanova\Api\Http\Validation\Domain;
+use Picanova\Api\Http\Validation\Prefix;
+use Picanova\Api\Contract\Http\Validator;
 use Illuminate\Http\Request as IlluminateRequest;
 
 class RequestValidator
@@ -67,7 +67,7 @@ class RequestValidator
     /**
      * Extend the validators.
      *
-     * @param string|\Dingo\Api\Http\Validator $validator
+     * @param string|\Picanova\Api\Http\Validator $validator
      *
      * @return void
      */

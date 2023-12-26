@@ -1,14 +1,14 @@
 <?php
 
-namespace Dingo\Api\Tests\Routing;
+namespace Picanova\Api\Tests\Routing;
 
-use Dingo\Api\Http;
-use Dingo\Api\Routing\Route;
-use Dingo\Api\Routing\Router;
-use Dingo\Api\Tests\Stubs\BasicThrottleStub;
-use Dingo\Api\Tests\Stubs\RoutingAdapterStub;
-use Dingo\Api\Tests\Stubs\RoutingControllerStub;
-use Dingo\Api\Tests\Stubs\ThrottleStub;
+use Picanova\Api\Http;
+use Picanova\Api\Routing\Route;
+use Picanova\Api\Routing\Router;
+use Picanova\Api\Tests\Stubs\BasicThrottleStub;
+use Picanova\Api\Tests\Stubs\RoutingAdapterStub;
+use Picanova\Api\Tests\Stubs\RoutingControllerStub;
+use Picanova\Api\Tests\Stubs\ThrottleStub;
 use Illuminate\Container\Container;
 use Mockery as m;
 use Symfony\Component\HttpKernel\Exception\HttpException;
@@ -51,7 +51,7 @@ class RouterTest extends Adapter\BaseAdapterTest
         $request = $this->createRequest('baz', 'GET', ['accept' => 'application/vnd.api.v1+json']);
         $this->router->dispatch($request);
 
-        $this->router->version('v2', ['providers' => 'foo', 'throttle' => new ThrottleStub(['limit' => 10, 'expires' => 15]), 'namespace' => '\Dingo\Api\Tests'], function () {
+        $this->router->version('v2', ['providers' => 'foo', 'throttle' => new ThrottleStub(['limit' => 10, 'expires' => 15]), 'namespace' => '\Picanova\Api\Tests'], function () {
             $this->router->get('foo', 'Stubs\RoutingControllerStub@index');
         });
 
@@ -310,7 +310,7 @@ class RouterTest extends Adapter\BaseAdapterTest
 
     public function testGroupNamespacesAreConcatenated()
     {
-        $this->router->version('v1', ['namespace' => '\Dingo\Api'], function () {
+        $this->router->version('v1', ['namespace' => '\Picanova\Api'], function () {
             $this->router->group(['namespace' => 'Tests\Stubs'], function () {
                 $this->router->get('foo', 'RoutingControllerStub@getIndex');
             });
@@ -342,7 +342,7 @@ class RouterTest extends Adapter\BaseAdapterTest
 
     public function testCurrentRouteAction()
     {
-        $this->router->version('v1', ['namespace' => '\Dingo\Api\Tests\Stubs'], function () {
+        $this->router->version('v1', ['namespace' => '\Picanova\Api\Tests\Stubs'], function () {
             $this->router->get('foo', 'RoutingControllerStub@getIndex');
         });
 

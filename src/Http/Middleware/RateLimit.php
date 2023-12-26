@@ -1,35 +1,35 @@
 <?php
 
-namespace Dingo\Api\Http\Middleware;
+namespace Picanova\Api\Http\Middleware;
 
 use Closure;
-use Dingo\Api\Http\Response;
-use Dingo\Api\Routing\Router;
-use Dingo\Api\Http\InternalRequest;
-use Dingo\Api\Http\RateLimit\Handler;
-use Dingo\Api\Exception\RateLimitExceededException;
+use Picanova\Api\Http\Response;
+use Picanova\Api\Routing\Router;
+use Picanova\Api\Http\InternalRequest;
+use Picanova\Api\Http\RateLimit\Handler;
+use Picanova\Api\Exception\RateLimitExceededException;
 
 class RateLimit
 {
     /**
      * Router instance.
      *
-     * @var \Dingo\Api\Routing\Router
+     * @var \Picanova\Api\Routing\Router
      */
     protected $router;
 
     /**
      * Rate limit handler instance.
      *
-     * @var \Dingo\Api\Http\RateLimit\Handler
+     * @var \Picanova\Api\Http\RateLimit\Handler
      */
     protected $handler;
 
     /**
      * Create a new rate limit middleware instance.
      *
-     * @param \Dingo\Api\Routing\Router         $router
-     * @param \Dingo\Api\Http\RateLimit\Handler $handler
+     * @param \Picanova\Api\Routing\Router         $router
+     * @param \Picanova\Api\Http\RateLimit\Handler $handler
      *
      * @return void
      */
@@ -42,7 +42,7 @@ class RateLimit
     /**
      * Perform rate limiting before a request is executed.
      *
-     * @param \Dingo\Api\Http\Request $request
+     * @param \Picanova\Api\Http\Request $request
      * @param \Closure                $next
      *
      * @throws \Symfony\Component\HttpKernel\Exception\HttpException
@@ -79,9 +79,9 @@ class RateLimit
     /**
      * Send the response with the rate limit headers.
      *
-     * @param \Dingo\Api\Http\Response $response
+     * @param \Picanova\Api\Http\Response $response
      *
-     * @return \Dingo\Api\Http\Response
+     * @return \Picanova\Api\Http\Response
      */
     protected function responseWithHeaders($response)
     {

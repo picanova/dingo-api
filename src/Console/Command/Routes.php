@@ -1,10 +1,10 @@
 <?php
 
-namespace Dingo\Api\Console\Command;
+namespace Picanova\Api\Console\Command;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Dingo\Api\Routing\Router;
+use Picanova\Api\Routing\Router;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Illuminate\Foundation\Console\RouteListCommand;
@@ -14,7 +14,7 @@ class Routes extends RouteListCommand
     /**
      * Dingo router instance.
      *
-     * @var \Dingo\Api\Routing\Router
+     * @var \Picanova\Api\Routing\Router
      */
     protected $router;
 
@@ -49,7 +49,7 @@ class Routes extends RouteListCommand
     /**
      * Create a new routes command instance.
      *
-     * @param \Dingo\Api\Routing\Router $router
+     * @param \Picanova\Api\Routing\Router $router
      *
      * @return void
      */
@@ -138,7 +138,7 @@ class Routes extends RouteListCommand
      * idea of how many requests you'd be able to fire off per second
      * on the route.
      *
-     * @param \Dingo\Api\Routing\Route $route
+     * @param \Picanova\Api\Routing\Route $route
      *
      * @return null|string
      */

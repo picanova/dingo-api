@@ -1,11 +1,11 @@
 <?php
 
-namespace Dingo\Api\Transformer\Adapter;
+namespace Picanova\Api\Transformer\Adapter;
 
-use Dingo\Api\Http\Request;
-use Dingo\Api\Transformer\Binding;
+use Picanova\Api\Http\Request;
+use Picanova\Api\Transformer\Binding;
 use League\Fractal\TransformerAbstract;
-use Dingo\Api\Contract\Transformer\Adapter;
+use Picanova\Api\Contract\Transformer\Adapter;
 use League\Fractal\Manager as FractalManager;
 use League\Fractal\Resource\Item as FractalItem;
 use League\Fractal\Pagination\IlluminatePaginatorAdapter;
@@ -67,8 +67,8 @@ class Fractal implements Adapter
      *
      * @param mixed                                     $response
      * @param League\Fractal\TransformerAbstract|object $transformer
-     * @param \Dingo\Api\Transformer\Binding            $binding
-     * @param \Dingo\Api\Http\Request                   $request
+     * @param \Picanova\Api\Transformer\Binding            $binding
+     * @param \Picanova\Api\Http\Request                   $request
      *
      * @return array
      */
@@ -161,7 +161,7 @@ class Fractal implements Adapter
     /**
      * Parse the includes.
      *
-     * @param \Dingo\Api\Http\Request $request
+     * @param \Picanova\Api\Http\Request $request
      *
      * @return void
      */
@@ -214,7 +214,7 @@ class Fractal implements Adapter
     /**
      * Disable eager loading.
      *
-     * @return \Dingo\Api\Transformer\Adapter\Fractal
+     * @return \Picanova\Api\Transformer\Adapter\Fractal
      */
     public function disableEagerLoading()
     {
@@ -226,7 +226,7 @@ class Fractal implements Adapter
     /**
      * Enable eager loading.
      *
-     * @return \Dingo\Api\Transformer\Adapter\Fractal
+     * @return \Picanova\Api\Transformer\Adapter\Fractal
      */
     public function enableEagerLoading()
     {

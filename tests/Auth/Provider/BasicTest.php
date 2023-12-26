@@ -1,10 +1,10 @@
 <?php
 
-namespace Dingo\Api\Tests\Auth\Provider;
+namespace Picanova\Api\Tests\Auth\Provider;
 
-use Dingo\Api\Auth\Provider\Basic;
-use Dingo\Api\Routing\Route;
-use Dingo\Api\Tests\BaseTestCase;
+use Picanova\Api\Auth\Provider\Basic;
+use Picanova\Api\Routing\Route;
+use Picanova\Api\Tests\BaseTestCase;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Mockery as m;

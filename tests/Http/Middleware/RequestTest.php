@@ -1,20 +1,20 @@
 <?php
 
-namespace Dingo\Api\Tests\Http\Middleware;
+namespace Picanova\Api\Tests\Http\Middleware;
 
-use Dingo\Api\Contract\Http\Request as RequestContract;
-use Dingo\Api\Exception\Handler;
-use Dingo\Api\Http\Middleware\Request as RequestMiddleware;
-use Dingo\Api\Http\Parser\Accept as AcceptParser;
-use Dingo\Api\Http\Request;
-use Dingo\Api\Http\RequestValidator;
-use Dingo\Api\Http\Validation;
-use Dingo\Api\Http\Validation\Accept;
-use Dingo\Api\Http\Validation\Domain;
-use Dingo\Api\Http\Validation\Prefix;
-use Dingo\Api\Routing\Router;
-use Dingo\Api\Tests\BaseTestCase;
-use Dingo\Api\Tests\ChecksLaravelVersionTrait;
+use Picanova\Api\Contract\Http\Request as RequestContract;
+use Picanova\Api\Exception\Handler;
+use Picanova\Api\Http\Middleware\Request as RequestMiddleware;
+use Picanova\Api\Http\Parser\Accept as AcceptParser;
+use Picanova\Api\Http\Request;
+use Picanova\Api\Http\RequestValidator;
+use Picanova\Api\Http\Validation;
+use Picanova\Api\Http\Validation\Accept;
+use Picanova\Api\Http\Validation\Domain;
+use Picanova\Api\Http\Validation\Prefix;
+use Picanova\Api\Routing\Router;
+use Picanova\Api\Tests\BaseTestCase;
+use Picanova\Api\Tests\ChecksLaravelVersionTrait;
 use Illuminate\Events\Dispatcher as EventDispatcher;
 use Illuminate\Http\Request as IlluminateRequest;
 use Mockery as m;
@@ -22,7 +22,7 @@ use Mockery as m;
 class RequestTest extends BaseTestCase
 {
     /**
-     * @var \Dingo\Api\Tests\Stubs\Application58Stub|\Dingo\Api\Tests\Stubs\Application6Stub|\Dingo\Api\Tests\Stubs\ApplicationStub
+     * @var \Picanova\Api\Tests\Stubs\Application58Stub|\Picanova\Api\Tests\Stubs\Application6Stub|\Picanova\Api\Tests\Stubs\ApplicationStub
      */
     protected $app;
     /**

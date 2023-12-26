@@ -6,7 +6,7 @@ if (! function_exists('version')) {
      *
      * @param string $version
      *
-     * @return \Dingo\Api\Routing\UrlGenerator
+     * @return \Picanova\Api\Routing\UrlGenerator
      */
     function version($version)
     {

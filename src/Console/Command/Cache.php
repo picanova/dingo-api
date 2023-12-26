@@ -1,11 +1,11 @@
 <?php
 
-namespace Dingo\Api\Console\Command;
+namespace Picanova\Api\Console\Command;
 
-use Dingo\Api\Routing\Router;
+use Picanova\Api\Routing\Router;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
-use Dingo\Api\Contract\Routing\Adapter;
+use Picanova\Api\Contract\Routing\Adapter;
 use Illuminate\Contracts\Console\Kernel;
 
 class Cache extends Command
@@ -34,14 +34,14 @@ class Cache extends Command
     /**
      * Router instance.
      *
-     * @var \Dingo\Api\Routing\Router
+     * @var \Picanova\Api\Routing\Router
      */
     private $router;
 
     /**
      * Adapter instance.
      *
-     * @var \Dingo\Api\Contract\Routing\Adapter
+     * @var \Picanova\Api\Contract\Routing\Adapter
      */
     private $adapter;
 
@@ -49,8 +49,8 @@ class Cache extends Command
      * Create a new cache command instance.
      *
      * @param \Illuminate\Filesystem\Filesystem   $files
-     * @param \Dingo\Api\Routing\Router           $router
-     * @param \Dingo\Api\Contract\Routing\Adapter $adapter
+     * @param \Picanova\Api\Routing\Router           $router
+     * @param \Picanova\Api\Contract\Routing\Adapter $adapter
      *
      * @return void
      */

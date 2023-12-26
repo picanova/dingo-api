@@ -1,10 +1,10 @@
 <?php
 
-namespace Dingo\Api\Tests\Stubs;
+namespace Picanova\Api\Tests\Stubs;
 
-use Dingo\Api\Contract\Transformer\Adapter;
-use Dingo\Api\Http\Request;
-use Dingo\Api\Transformer\Binding;
+use Picanova\Api\Contract\Transformer\Adapter;
+use Picanova\Api\Http\Request;
+use Picanova\Api\Transformer\Binding;
 use Illuminate\Support\Collection;
 
 class TransformerStub implements Adapter

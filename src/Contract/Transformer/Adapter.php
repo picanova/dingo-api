@@ -1,9 +1,9 @@
 <?php
 
-namespace Dingo\Api\Contract\Transformer;
+namespace Picanova\Api\Contract\Transformer;
 
-use Dingo\Api\Http\Request;
-use Dingo\Api\Transformer\Binding;
+use Picanova\Api\Http\Request;
+use Picanova\Api\Transformer\Binding;
 
 interface Adapter
 {
@@ -12,8 +12,8 @@ interface Adapter
      *
      * @param mixed                          $response
      * @param object                         $transformer
-     * @param \Dingo\Api\Transformer\Binding $binding
-     * @param \Dingo\Api\Http\Request        $request
+     * @param \Picanova\Api\Transformer\Binding $binding
+     * @param \Picanova\Api\Http\Request        $request
      *
      * @return array
      */

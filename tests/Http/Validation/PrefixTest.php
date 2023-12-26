@@ -1,9 +1,9 @@
 <?php
 
-namespace Dingo\Api\Tests\Http\Validation;
+namespace Picanova\Api\Tests\Http\Validation;
 
-use Dingo\Api\Http\Validation\Prefix;
-use Dingo\Api\Tests\BaseTestCase;
+use Picanova\Api\Http\Validation\Prefix;
+use Picanova\Api\Tests\BaseTestCase;
 use Illuminate\Http\Request;
 
 class PrefixTest extends BaseTestCase

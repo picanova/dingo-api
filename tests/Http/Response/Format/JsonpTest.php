@@ -1,11 +1,11 @@
 <?php
 
-namespace Dingo\Api\Tests\Http\Response\Format;
+namespace Picanova\Api\Tests\Http\Response\Format;
 
-use Dingo\Api\Http\Response;
-use Dingo\Api\Http\Response\Format\Jsonp;
-use Dingo\Api\Tests\BaseTestCase;
-use Dingo\Api\Tests\Stubs\EloquentModelStub;
+use Picanova\Api\Http\Response;
+use Picanova\Api\Http\Response\Format\Jsonp;
+use Picanova\Api\Tests\BaseTestCase;
+use Picanova\Api\Tests\Stubs\EloquentModelStub;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 use Illuminate\Support\MessageBag;

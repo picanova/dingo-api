@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Facade;
+namespace Picanova\Api\Facade;
 
 use Illuminate\Support\Facades\Facade;
 

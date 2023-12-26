@@ -1,13 +1,13 @@
 <?php
 
-namespace Dingo\Api\Transformer;
+namespace Picanova\Api\Transformer;
 
 use Closure;
 use RuntimeException;
-use Dingo\Api\Http\Request;
+use Picanova\Api\Http\Request;
 use Illuminate\Support\Collection;
 use Illuminate\Container\Container;
-use Dingo\Api\Contract\Transformer\Adapter;
+use Picanova\Api\Contract\Transformer\Adapter;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Http\Request as IlluminateRequest;
 
@@ -30,7 +30,7 @@ class Factory
     /**
      * Transformation layer adapter being used to transform responses.
      *
-     * @var \Dingo\Api\Contract\Transformer\Adapter
+     * @var \Picanova\Api\Contract\Transformer\Adapter
      */
     protected $adapter;
 
@@ -38,7 +38,7 @@ class Factory
      * Create a new transformer factory instance.
      *
      * @param \Illuminate\Container\Container         $container
-     * @param \Dingo\Api\Contract\Transformer\Adapter $adapter
+     * @param \Picanova\Api\Contract\Transformer\Adapter $adapter
      *
      * @return void
      */
@@ -56,7 +56,7 @@ class Factory
      * @param array         $parameters
      * @param \Closure|null $after
      *
-     * @return \Dingo\Api\Transformer\Binding
+     * @return \Picanova\Api\Transformer\Binding
      */
     public function register($class, $resolver, array $parameters = [], Closure $after = null)
     {
@@ -108,7 +108,7 @@ class Factory
      *
      * @throws \RuntimeException
      *
-     * @return \Dingo\Api\Transformer\Binding
+     * @return \Picanova\Api\Transformer\Binding
      */
     public function getBinding($class)
     {
@@ -132,7 +132,7 @@ class Factory
      * @param array                  $parameters
      * @param \Closure               $callback
      *
-     * @return \Dingo\Api\Transformer\Binding
+     * @return \Picanova\Api\Transformer\Binding
      */
     protected function createBinding($resolver, array $parameters = [], Closure $callback = null)
     {
@@ -194,7 +194,7 @@ class Factory
     /**
      * Set the transformation layer at runtime.
      *
-     * @param \Closure|\Dingo\Api\Contract\Transformer\Adapter $adapter
+     * @param \Closure|\Picanova\Api\Contract\Transformer\Adapter $adapter
      *
      * @return void
      */
@@ -210,7 +210,7 @@ class Factory
     /**
      * Get the transformation layer adapter.
      *
-     * @return \Dingo\Api\Contract\Transformer\Adapter
+     * @return \Picanova\Api\Contract\Transformer\Adapter
      */
     public function getAdapter()
     {
@@ -220,7 +220,7 @@ class Factory
     /**
      * Get the request from the container.
      *
-     * @return \Dingo\Api\Http\Request
+     * @return \Picanova\Api\Http\Request
      */
     public function getRequest()
     {

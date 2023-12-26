@@ -1,12 +1,12 @@
 <?php
 
-namespace Dingo\Api\Tests\Transformer;
+namespace Picanova\Api\Tests\Transformer;
 
-use Dingo\Api\Tests\BaseTestCase;
-use Dingo\Api\Tests\Stubs\TransformerStub;
-use Dingo\Api\Tests\Stubs\UserStub;
-use Dingo\Api\Tests\Stubs\UserTransformerStub;
-use Dingo\Api\Transformer\Factory;
+use Picanova\Api\Tests\BaseTestCase;
+use Picanova\Api\Tests\Stubs\TransformerStub;
+use Picanova\Api\Tests\Stubs\UserStub;
+use Picanova\Api\Tests\Stubs\UserTransformerStub;
+use Picanova\Api\Transformer\Factory;
 use Illuminate\Container\Container;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
@@ -22,7 +22,7 @@ class FactoryTest extends BaseTestCase
     public function setUp(): void
     {
         $container = new Container;
-        $container['request'] = Mockery::mock(\Dingo\Api\Http\Request::class);
+        $container['request'] = Mockery::mock(\Picanova\Api\Http\Request::class);
 
         $this->factory = new Factory($container, new TransformerStub);
     }
@@ -104,7 +104,7 @@ class FactoryTest extends BaseTestCase
     public function testTransformingWithNoTransformerThrowsException()
     {
         $this->expectException(\RuntimeException::class);
-        $this->expectExceptionMessage('Unable to find bound transformer for "Dingo\Api\Tests\Stubs\UserStub" class');
+        $this->expectExceptionMessage('Unable to find bound transformer for "Picanova\Api\Tests\Stubs\UserStub" class');
 
         $this->factory->transform(new UserStub('Jason'));
     }

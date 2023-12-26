@@ -1,17 +1,17 @@
 <?php
 
-namespace Dingo\Api\Routing;
+namespace Picanova\Api\Routing;
 
 use ErrorException;
-use Dingo\Api\Auth\Auth;
-use Dingo\Api\Dispatcher;
-use Dingo\Api\Http\Response\Factory;
+use Picanova\Api\Auth\Auth;
+use Picanova\Api\Dispatcher;
+use Picanova\Api\Http\Response\Factory;
 
 /**
- * @property \Dingo\Api\Dispatcher                                            $api
+ * @property \Picanova\Api\Dispatcher                                            $api
  * @property \Illuminate\Auth\GenericUser|\Illuminate\Database\Eloquent\Model $user
- * @property \Dingo\Api\Auth\Auth                                             $auth
- * @property \Dingo\Api\Http\Response\Factory                                 $response
+ * @property \Picanova\Api\Auth\Auth                                             $auth
+ * @property \Picanova\Api\Http\Response\Factory                                 $response
  */
 trait Helpers
 {
@@ -46,7 +46,7 @@ trait Helpers
     /**
      * Throttles for controller methods.
      *
-     * @param string|\Dingo\Api\Contract\Http\RateLimit\Throttle $class
+     * @param string|\Picanova\Api\Contract\Http\RateLimit\Throttle $class
      * @param array                                              $options
      *
      * @return void
@@ -155,7 +155,7 @@ trait Helpers
     /**
      * Get the internal dispatcher instance.
      *
-     * @return \Dingo\Api\Dispatcher
+     * @return \Picanova\Api\Dispatcher
      */
     public function api()
     {
@@ -175,7 +175,7 @@ trait Helpers
     /**
      * Get the auth instance.
      *
-     * @return \Dingo\Api\Auth\Auth
+     * @return \Picanova\Api\Auth\Auth
      */
     protected function auth()
     {
@@ -185,7 +185,7 @@ trait Helpers
     /**
      * Get the response factory instance.
      *
-     * @return \Dingo\Api\Http\Response\Factory
+     * @return \Picanova\Api\Http\Response\Factory
      */
     protected function response()
     {
@@ -222,7 +222,7 @@ trait Helpers
      *
      * @throws \ErrorException
      *
-     * @return \Dingo\Api\Http\Response
+     * @return \Picanova\Api\Http\Response
      */
     public function __call($method, $parameters)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Http;
+namespace Picanova\Api\Http;
 
 class InternalRequest extends Request
 {

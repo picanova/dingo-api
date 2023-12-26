@@ -1,20 +1,20 @@
 <?php
 
-namespace Dingo\Api\Provider;
+namespace Picanova\Api\Provider;
 
 use ReflectionClass;
-use Dingo\Api\Http\FormRequest;
+use Picanova\Api\Http\FormRequest;
 use Illuminate\Routing\Redirector;
-use Dingo\Api\Http\Middleware\Auth;
+use Picanova\Api\Http\Middleware\Auth;
 use Illuminate\Contracts\Http\Kernel;
-use Dingo\Api\Event\RequestWasMatched;
-use Dingo\Api\Http\Middleware\Request;
+use Picanova\Api\Event\RequestWasMatched;
+use Picanova\Api\Http\Middleware\Request;
 use Illuminate\Foundation\Application;
-use Dingo\Api\Http\Middleware\RateLimit;
+use Picanova\Api\Http\Middleware\RateLimit;
 use Illuminate\Routing\ControllerDispatcher;
-use Dingo\Api\Http\Middleware\PrepareController;
+use Picanova\Api\Http\Middleware\PrepareController;
 use Illuminate\Http\Request as IlluminateRequest;
-use Dingo\Api\Routing\Adapter\Laravel as LaravelAdapter;
+use Picanova\Api\Routing\Adapter\Laravel as LaravelAdapter;
 use Illuminate\Contracts\Validation\ValidatesWhenResolved;
 
 class LaravelServiceProvider extends DingoServiceProvider

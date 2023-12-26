@@ -1,9 +1,9 @@
 <?php
 
-namespace Dingo\Api\Routing\Adapter;
+namespace Picanova\Api\Routing\Adapter;
 
-use Dingo\Api\Contract\Routing\Adapter;
-use Dingo\Api\Exception\UnknownVersionException;
+use Picanova\Api\Contract\Routing\Adapter;
+use Picanova\Api\Exception\UnknownVersionException;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
 use Illuminate\Routing\RouteCollection;

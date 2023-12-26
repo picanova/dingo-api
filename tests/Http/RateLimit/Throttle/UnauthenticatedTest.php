@@ -1,10 +1,10 @@
 <?php
 
-namespace Dingo\Api\Tests\Http\RateLimit\Throttle;
+namespace Picanova\Api\Tests\Http\RateLimit\Throttle;
 
-use Dingo\Api\Auth\Auth;
-use Dingo\Api\Http\RateLimit\Throttle\Unauthenticated;
-use Dingo\Api\Tests\BaseTestCase;
+use Picanova\Api\Auth\Auth;
+use Picanova\Api\Http\RateLimit\Throttle\Unauthenticated;
+use Picanova\Api\Tests\BaseTestCase;
 use Illuminate\Container\Container;
 use Mockery;
 

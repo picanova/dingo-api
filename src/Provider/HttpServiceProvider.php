@@ -1,25 +1,25 @@
 <?php
 
-namespace Dingo\Api\Provider;
+namespace Picanova\Api\Provider;
 
-use Dingo\Api\Auth\Auth;
-use Dingo\Api\Routing\Router;
-use Dingo\Api\Http\Middleware;
-use Dingo\Api\Http\Validation;
-use Dingo\Api\Transformer\Factory;
-use Dingo\Api\Http\RequestValidator;
-use Dingo\Api\Http\RateLimit\Handler;
-use Dingo\Api\Http\Validation\Accept;
-use Dingo\Api\Http\Validation\Domain;
-use Dingo\Api\Http\Validation\Prefix;
-use Dingo\Api\Http\Middleware\Request;
-use Dingo\Api\Http\Middleware\RateLimit;
-use Dingo\Api\Contract\Debug\ExceptionHandler;
-use Dingo\Api\Http\Middleware\PrepareController;
-use Dingo\Api\Http\Parser\Accept as AcceptParser;
-use Dingo\Api\Http\Middleware\Auth as AuthMiddleware;
-use Dingo\Api\Http\Response\Factory as ResponseFactory;
-use Dingo\Api\Http\RateLimit\Handler as RateLimitHandler;
+use Picanova\Api\Auth\Auth;
+use Picanova\Api\Routing\Router;
+use Picanova\Api\Http\Middleware;
+use Picanova\Api\Http\Validation;
+use Picanova\Api\Transformer\Factory;
+use Picanova\Api\Http\RequestValidator;
+use Picanova\Api\Http\RateLimit\Handler;
+use Picanova\Api\Http\Validation\Accept;
+use Picanova\Api\Http\Validation\Domain;
+use Picanova\Api\Http\Validation\Prefix;
+use Picanova\Api\Http\Middleware\Request;
+use Picanova\Api\Http\Middleware\RateLimit;
+use Picanova\Api\Contract\Debug\ExceptionHandler;
+use Picanova\Api\Http\Middleware\PrepareController;
+use Picanova\Api\Http\Parser\Accept as AcceptParser;
+use Picanova\Api\Http\Middleware\Auth as AuthMiddleware;
+use Picanova\Api\Http\Response\Factory as ResponseFactory;
+use Picanova\Api\Http\RateLimit\Handler as RateLimitHandler;
 
 class HttpServiceProvider extends ServiceProvider
 {

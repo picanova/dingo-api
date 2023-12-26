@@ -1,14 +1,14 @@
 <?php
 
-namespace Dingo\Api\Tests\Http\Middleware;
+namespace Picanova\Api\Tests\Http\Middleware;
 
-use Dingo\Api\Auth\Auth;
-use Dingo\Api\Http\Middleware\Auth as AuthMiddleware;
-use Dingo\Api\Http\Request;
-use Dingo\Api\Routing\Route;
-use Dingo\Api\Routing\Router;
-use Dingo\Api\Tests\BaseTestCase;
-use Dingo\Api\Tests\Stubs\RoutingAdapterStub;
+use Picanova\Api\Auth\Auth;
+use Picanova\Api\Http\Middleware\Auth as AuthMiddleware;
+use Picanova\Api\Http\Request;
+use Picanova\Api\Routing\Route;
+use Picanova\Api\Routing\Router;
+use Picanova\Api\Tests\BaseTestCase;
+use Picanova\Api\Tests\Stubs\RoutingAdapterStub;
 use Illuminate\Container\Container;
 use Illuminate\Routing\Route as IlluminateRoute;
 use Mockery as m;

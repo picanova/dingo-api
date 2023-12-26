@@ -1,9 +1,9 @@
 <?php
 
-namespace Dingo\Api\Tests\Stubs;
+namespace Picanova\Api\Tests\Stubs;
 
-use Dingo\Api\Auth\Provider\Authorization;
-use Dingo\Api\Routing\Route;
+use Picanova\Api\Auth\Provider\Authorization;
+use Picanova\Api\Routing\Route;
 use Illuminate\Http\Request;
 
 class AuthorizationProviderStub extends Authorization

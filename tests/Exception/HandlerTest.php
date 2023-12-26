@@ -1,11 +1,11 @@
 <?php
 
-namespace Dingo\Api\Tests\Exception;
+namespace Picanova\Api\Tests\Exception;
 
-use Dingo\Api\Exception\Handler;
-use Dingo\Api\Exception\ResourceException;
-use Dingo\Api\Http\Request as ApiRequest;
-use Dingo\Api\Tests\BaseTestCase;
+use Picanova\Api\Exception\Handler;
+use Picanova\Api\Exception\ResourceException;
+use Picanova\Api\Http\Request as ApiRequest;
+use Picanova\Api\Tests\BaseTestCase;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;

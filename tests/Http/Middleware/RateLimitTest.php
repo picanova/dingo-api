@@ -1,17 +1,17 @@
 <?php
 
-namespace Dingo\Api\Tests\Http\Middleware;
+namespace Picanova\Api\Tests\Http\Middleware;
 
-use Dingo\Api\Exception\RateLimitExceededException;
-use Dingo\Api\Http\InternalRequest;
-use Dingo\Api\Http\Middleware\RateLimit;
-use Dingo\Api\Http\RateLimit\Handler;
-use Dingo\Api\Http\Request;
-use Dingo\Api\Http\Response;
-use Dingo\Api\Routing\Route;
-use Dingo\Api\Routing\Router;
-use Dingo\Api\Tests\BaseTestCase;
-use Dingo\Api\Tests\Stubs\ThrottleStub;
+use Picanova\Api\Exception\RateLimitExceededException;
+use Picanova\Api\Http\InternalRequest;
+use Picanova\Api\Http\Middleware\RateLimit;
+use Picanova\Api\Http\RateLimit\Handler;
+use Picanova\Api\Http\Request;
+use Picanova\Api\Http\Response;
+use Picanova\Api\Routing\Route;
+use Picanova\Api\Routing\Router;
+use Picanova\Api\Tests\BaseTestCase;
+use Picanova\Api\Tests\Stubs\ThrottleStub;
 use Illuminate\Cache\CacheManager;
 use Illuminate\Container\Container;
 use Mockery as m;

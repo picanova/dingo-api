@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Api\Http\Response\Format;
+namespace Picanova\Api\Http\Response\Format;
 
 abstract class Format
 {
@@ -30,7 +30,7 @@ abstract class Format
      *
      * @param \Illuminate\Http\Request $request
      *
-     * @return \Dingo\Api\Http\Response\Format\Format
+     * @return \Picanova\Api\Http\Response\Format\Format
      */
     public function setRequest($request)
     {
@@ -44,7 +44,7 @@ abstract class Format
      *
      * @param \Illuminate\Http\Response $response
      *
-     * @return \Dingo\Api\Http\Response\Format\Format
+     * @return \Picanova\Api\Http\Response\Format\Format
      */
     public function setResponse($response)
     {
@@ -58,7 +58,7 @@ abstract class Format
      *
      * @param array $options
      *
-     * @return \Dingo\Api\Http\Response\Format\Format
+     * @return \Picanova\Api\Http\Response\Format\Format
      */
     public function setOptions(array $options)
     {

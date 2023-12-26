@@ -1,32 +1,32 @@
 <?php
 
-namespace Dingo\Api\Http\Middleware;
+namespace Picanova\Api\Http\Middleware;
 
 use Closure;
-use Dingo\Api\Routing\Router;
-use Dingo\Api\Auth\Auth as Authentication;
+use Picanova\Api\Routing\Router;
+use Picanova\Api\Auth\Auth as Authentication;
 
 class Auth
 {
     /**
      * Router instance.
      *
-     * @var \Dingo\Api\Routing\Router
+     * @var \Picanova\Api\Routing\Router
      */
     protected $router;
 
     /**
      * Authenticator instance.
      *
-     * @var \Dingo\Api\Auth\Auth
+     * @var \Picanova\Api\Auth\Auth
      */
     protected $auth;
 
     /**
      * Create a new auth middleware instance.
      *
-     * @param \Dingo\Api\Routing\Router $router
-     * @param \Dingo\Api\Auth\Auth      $auth
+     * @param \Picanova\Api\Routing\Router $router
+     * @param \Picanova\Api\Auth\Auth      $auth
      *
      * @return void
      */

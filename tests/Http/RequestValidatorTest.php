@@ -1,11 +1,11 @@
 <?php
 
-namespace Dingo\Api\Tests\Http;
+namespace Picanova\Api\Tests\Http;
 
-use Dingo\Api\Http\Parser\Accept as AcceptParser;
-use Dingo\Api\Http\RequestValidator;
-use Dingo\Api\Tests\BaseTestCase;
-use Dingo\Api\Tests\Stubs\HttpValidatorStub;
+use Picanova\Api\Http\Parser\Accept as AcceptParser;
+use Picanova\Api\Http\RequestValidator;
+use Picanova\Api\Tests\BaseTestCase;
+use Picanova\Api\Tests\Stubs\HttpValidatorStub;
 use Illuminate\Container\Container;
 use Illuminate\Http\Request;
 

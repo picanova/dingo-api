@@ -1,15 +1,15 @@
 <?php
 
-namespace Dingo\Api\Http\RateLimit;
+namespace Picanova\Api\Http\RateLimit;
 
-use Dingo\Api\Http\Request;
+use Picanova\Api\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Cache\CacheManager;
 use Illuminate\Support\Collection;
 use Illuminate\Container\Container;
-use Dingo\Api\Http\RateLimit\Throttle\Route;
-use Dingo\Api\Contract\Http\RateLimit\Throttle;
-use Dingo\Api\Contract\Http\RateLimit\HasRateLimiter;
+use Picanova\Api\Http\RateLimit\Throttle\Route;
+use Picanova\Api\Contract\Http\RateLimit\Throttle;
+use Picanova\Api\Contract\Http\RateLimit\HasRateLimiter;
 
 class Handler
 {
@@ -37,14 +37,14 @@ class Handler
     /**
      * Throttle used for rate limiting.
      *
-     * @var \Dingo\Api\Contract\Http\RateLimit\Throttle
+     * @var \Picanova\Api\Contract\Http\RateLimit\Throttle
      */
     protected $throttle;
 
     /**
      * Request instance being throttled.
      *
-     * @var \Dingo\Api\Http\Request
+     * @var \Picanova\Api\Http\Request
      */
     protected $request;
 
@@ -81,7 +81,7 @@ class Handler
     /**
      * Execute the rate limiting for the given request.
      *
-     * @param \Dingo\Api\Http\Request $request
+     * @param \Picanova\Api\Http\Request $request
      * @param int                     $limit
      * @param int                     $expires
      *
@@ -262,7 +262,7 @@ class Handler
     /**
      * Set the throttle to use for rate limiting.
      *
-     * @param string|\Dingo\Api\Contract\Http\RateLimit\Throttle $throttle
+     * @param string|\Picanova\Api\Contract\Http\RateLimit\Throttle $throttle
      *
      * @return void
      */
@@ -278,7 +278,7 @@ class Handler
     /**
      * Get the throttle used to rate limit the request.
      *
-     * @return \Dingo\Api\Contract\Http\RateLimit\Throttle
+     * @return \Picanova\Api\Contract\Http\RateLimit\Throttle
      */
     public function getThrottle()
     {
@@ -320,7 +320,7 @@ class Handler
     /**
      * Extend the rate limiter by adding a new throttle.
      *
-     * @param callable|\Dingo\Api\Http\RateLimit\Throttle $throttle
+     * @param callable|\Picanova\Api\Http\RateLimit\Throttle $throttle
      *
      * @return void
      */

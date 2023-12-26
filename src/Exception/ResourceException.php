@@ -1,10 +1,10 @@
 <?php
 
-namespace Dingo\Api\Exception;
+namespace Picanova\Api\Exception;
 
 use Exception;
 use Illuminate\Support\MessageBag;
-use Dingo\Api\Contract\Debug\MessageBagErrors;
+use Picanova\Api\Contract\Debug\MessageBagErrors;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class ResourceException extends HttpException implements MessageBagErrors
